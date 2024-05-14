@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ASR</title>
+<style>
+        .cuadrante {
+            background-color: #f2f2f2; /* Color de fondo */
+            border: 1px solid #dcdcdc; /* Borde del div */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            padding: 20px; /* Espaciado interno */
+            margin: 20px; /* Espaciado externo */
+            text-align: center; /* Alineación del texto */
+            transition: transform 0.3s ease-in-out; /* Transición suave para efectos de hover */
+        }
+
+        .cuadrante:hover {
+            transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8E8E8;
+            color: #333;
+          }
+
+          .main-content {
+            text-align: center;
+          }
+          .main-content img {
+            max-width: 100%;
+            height: auto;
+          }
+          .footer {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+          }
+
+          /* Si la pantalla es más ancha que 768px, ajusta los divs en dos columnas */
+            @media (min-width: 768px) {
+              .div-container {
+                display: flex;
+              }
+              .div-container > div {
+                width: 50%; /* Cada div tomará el 50% del ancho del contenedor */
+              }
+            }
+
+            /* Si la pantalla es más estrecha que 768px, cada div toma el 100% del ancho */
+            @media (max-width: 767px) {
+              .div-container > div {
+                width: 100%;
+              }
+            }
+</style>
+</head>
+    <body class="contenido">
+        <div class="main-content" ><header><img src="img/baner.png"> </header><div class="contenedor">
+            <div class="div-container">
+            <div class="cuadrante">
+                <h4>Erika Alondra Marroquin Echegoyen</h4>
+                <h4>ME180102</h4>
+                <img src="img/Erika.jpg">
+            </div>
+            <div class="cuadrante">
+                <h4>Lenin Steven Martinez Huezo</h4>
+                <h4>MH180095</h4>
+                <img src="img/Lenin.jpg">
+            </div>
+            <div class="cuadrante">
+                <h4>Rodrigo Ignacio Martínez Pérez</h4>
+                <h4>MP232356</h4>
+                <img src="img/rodrigo.jpg">
+            </div>
+            <div class="cuadrante">
+                <h4>Jorge Antonio Díaz García</h4>
+                <h4>DG101201</h4>
+                <img src="img/Jorge.jpg">
+            </div>
+        </div>
+        <br>
+        </div>
+        <footer><img src="img/footer.png"></footer>
+       </div>
+    </body>
+</html>
